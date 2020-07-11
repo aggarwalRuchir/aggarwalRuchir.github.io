@@ -132,7 +132,7 @@
             <section class="wrapper style4 align-center">
                 <div class="inner">
                     <div class="index align-left">   
-                        <section>
+                        <section class="wrapper style4">
                             <div class="content">
                                 <h2><u>Architecture</u></h2>
                                 <span class="image fit">
@@ -146,9 +146,8 @@
                                     The architecture for generators and discriminators for all levels remain the same. Both are fully convolutional and a patch of noise is added to the output from previous level and the result is passed through the generator.
                                     At the coarsest level, the number of kernels is 32 and we double the number of kernels every 4 levels as in the original implementation. The receptive field is set at the coarsest layer and remains constant (11 × 11) for every layer. As we move up the pyramid, the image is upscaled but a fixed receptive field means a varying effective patch size as shown by the yellow block.
                                 </p>
-                                
                             </div>
-                        </section >
+                        </section>
                     </div>
                 </div>
                 
@@ -175,7 +174,6 @@
                                 </p>
                                 <span class="image fit"><img src="deep_learning/sinGAN/SinGAN_editing_1.png"  alt="" /></span>
 
-                                
                                 <h3>Harmonization</h3>
                                 <p>
                                     Harmonization is a cool technique where style of images are explicitlye matched before blending them. Using a multi-level technique allows us to transfer the appearance of one image to another. To achieve this technique, SinGAN is first trained on a background image. Then an input image with newly added content to the original image is injected  and realistically blended with the style of the background. Similarly to editing, the injection scale impacts the final output. The best results are achieved at scales 3 or 4 because the newly added content maintains its structure while it is converted to the background’s style.
