@@ -153,22 +153,20 @@
                 
                 
                 <!-- Applications -->
-                <div class="inner">    
-                    <div class="index align-left">    
+                <div class="inner align-left">      
                         <section class="wrapper style4">
                             <div class="content">
                                 <h2><u>Applications</u></h2>
                                 
-                                <p>Apart from random sample generation, SinGAN can be used to perform multiple image manipulative tasks like <code>paint-to-image</code>, <code>editing</code>, <code>harmonization</code>, <code>super-resolution</code> and <code>animation from a single image</code>. All such manipulation tasks can be performed by simply using the trained model without any further tuning. <b>However, the team implemented two maniupulation tasks: Editing and Harmonization</b></p>
-                                
+                                <p>
+                                    Apart from random sample generation, SinGAN can be used to perform multiple image manipulative tasks like <code>paint-to-image</code>, <code>editing</code>, <code>harmonization</code>, <code>super-resolution</code> and <code>animation from a single image</code>. All such manipulation tasks can be performed by simply using the trained model without any further tuning. <b>However, the team implemented two maniupulation tasks: Editing and Harmonization</b>
+                                </p>
                                 
                                 <h3>Editing</h3>
                                 <p>
                                     <span class="image left"><img src="deep_learning/sinGAN/SinGAN_editing_2.png" alt="" /></span>  
-                                    
                                     During the editing task, we copy certain patches of the original image and paste them in other locations in the same image. SinGAN can effectively regenerate fine texture and seamlessly stitch those pasted parts and create realistic images. 
                                 </p>
-                                
                                 <p>                  
                                     Injecting image at different levels of the pyramid impacts how the final output looks like. The change in output is because the effective patch size of GAN in each scale layer is different. As the injection scale decreases, the outcome is more like the edited input. The lower the injection scale, the smaller the structures modified in the output. For injection scale 7, more global properties are changed but for injection scale 1, only local textures are changed but the global structure remains the same. Based on experiments, injection scale of 2, 3 and 4 (for level 4, 5 or 6 respectively) works best.
                                 </p>
@@ -181,10 +179,8 @@
                                 <span class="image fit"><img src="deep_learning/sinGAN/SinGAN_harmonization.png"  alt="" /></span>
                                 
                             </div>
-                        </section>
-                        
+                        </section>                        
                     </div>
-                </div>
             </section>
             
             <!-- Footer -->
