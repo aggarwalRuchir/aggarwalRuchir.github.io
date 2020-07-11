@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ruchir Aggarwal | Blog</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>EECS598-012</h1>
+        <h3>Winter 2019 Course Project</h3>
+        <p class="view"><a href="https://github.com/denncli/multi-step-curiosity-driven-learning">View the Project on GitHub</a></p>
+        <ul>
+          <li><a href="./EECS598_012_Final_Report.pdf">Project <strong>Paper</strong></a></li>
+          <li><a href="./index.html">Home <strong>Page</strong></a></li>
+          <li><a href="https://pathak22.github.io/large-scale-curiosity/">Project <strong>Motivation</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        
+        <h1>Multi-Step Prediction for Curiosity Driven Learning</h1>
+        <br>
+        <h3>Ruchir Aggarwal* 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            Kushantha U. Attanayake*
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Dennis Li*</h3>
+        <h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+        Julio Soldevilla+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        Poorani Ravindhiran^ </h3>
+
+        <hr>
+
+        <p class="view">For the results we present here:</p>
+        <ul>
+            <li>&alpha; = Scaler for loss in timestep t + 1 = 1</li>
+            <li>&beta; = Scaler for loss in timestep t + 2</li>
+        </ul> 
+
+        <!-- Mario -->
+        <h2>Mario</h2>
+        <ul>
+            <li><h4>Comparison Video</h4>
+                <iframe width="600" height=300 src="https://drive.google.com/file/d/1IopldI48iwDZ79QAeRVxAm_3MACJk2ef/preview" ></iframe>
+            </li>
+            <br>
+            <li><h4>(Baseline) &alpha; = 1 , &beta; = 0</h4>
+                <iframe width="500" height="325" src="https://drive.google.com/file/d/1VYE_p3eR1_wSMUn9sbfRddceUvgqTzdy/preview"></iframe>
+            </li>
+            <br>
+            <li><h4>&alpha; = 1 , &beta; = 0.2</h4>
+                <iframe width="500" height="325" src="https://drive.google.com/file/d/14w_piQP2LibgK5GQjMAol68h6Ixkzna0/preview"></iframe> 
+            </li>
+            <br>
+            <li><h4>&alpha; = 1 , &beta; = 0.5</h4>
+                <iframe width="500" height="325" src="https://drive.google.com/file/d/1XRJH0km_B9QYcjlWyaV9IANxBavmihl4/preview"></iframe>
+            </li>
+          </ul>
+
+        <hr>
+
+        <!-- Breakout-->
+        <h2>Breakout</h2>
+        <ul>
+            <li><h4>&alpha; = 1 , &beta; = 0.5</h4>
+                <iframe width="450" height="350" src="https://drive.google.com/file/d/1NcZuA_mb25wcJ9aNkFgB4I23KSy2Df3s/preview"></iframe>
+            </li>
+          </ul>
+
+        <hr>
+
+        <!-- Space Invaders -->
+        <h2>Space Invaders</h2>
+        <ul>
+            <li><h4>&alpha; = 1 , &beta; = 0.5</h4>
+                <iframe width="450" height="350" src="https://drive.google.com/file/d/1B6tzPpj0LGDHbIKG979aPIC7UJ6Se0oN/preview"></iframe>
+            </li>
+          </ul>
+
+        <hr>
+
+        <!-- Pacman -->
+        <h2>Pacman</h2>
+        <ul>
+            <li><h4>Comparison Video</h4>
+                <iframe width="500" height="350" src="https://drive.google.com/file/d/1L5WqKWb7DosZ-xB9QEFE3OCdlrJonszj/preview"></iframe>
+            </li>
+            <br>
+            <li><h4>(Baseline) &alpha; = 1 , &beta; = 0</h4>
+                <iframe width="500" height="350" src="https://drive.google.com/file/d/1z3GnV7bljcHN55po8G91A8OgEdX-kyym/preview"></iframe>
+            </li>
+            <br>
+            <li><h4>&alpha; = 1 , &beta; = 0.5</h4>
+                <iframe width="500" height="350" src="https://drive.google.com/file/d/1d96U33K5HbJYmsNao0STIBu4mz_bzajM/preview"></iframe>
+            </li>
+        </ul>
+
+        <hr>
+        
+      </section>
+      <footer>
+        <p><small>A Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>

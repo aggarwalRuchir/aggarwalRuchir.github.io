@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ruchir Aggarwal | Deep Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper" class="divided">
+                
+            <!-- One -->
+            <section class="invert align-center">
+                <div class="items2 style3 small">
+                    <section>
+                        <h3><a href="about_me.html">About Me</a></h3>
+                    </section>
+                    <section>
+                        <h3><a href="research.html">Research</a></h3>
+                    </section>
+                    <section>
+                        <h3><a href="work.html">Work</a></h3>
+                    </section>
+                    <section>
+                        <h3><a href="blog.html">Blog</a></h3>
+                    </section>
+                </div>
+            </section>
+            
+            
+            <!-- Two -->
+            <section class="wrapper style0 align-center">
+                <div class="inner">
+                    <h2>SinGAN: Learning a Generative Model from a Single Natural Image</h2>
+                    <h4>Computer Vision <span style="padding-left: 2em;"></span> | <span style="padding-left: 2em;"></span> <a href="https://drive.google.com/open?id=1Vymn9TkxWP8mEgOr350Sa70ZsmTfZR68">Jupyter Notebook</a> <span style="padding-left: 2em;"></span> | <span style="padding-left: 2em;"></span> <a href="deep_learning/sinGAN/SinGAN_paper.pdf">Final Paper</a></h4>
+                    
+                    
+                    <div class="index align-left">    
+                        <section id="first">
+                            <div class="content">
+                                <span class="image fit"><img src="deep_learning/sinGAN/SinGAN_highlight.png" alt="" /></span>
+                                <p><b>My Role</b> <span style="padding-left: 2em;"></span> GAN Architecture <br>
+                                    <span style="padding-left: 5.4em;"></span> Network Training <br>
+                                    <span style="padding-left: 5.4em;"></span> Random Sampling (w/ scaled random sampling) <br>
+                                </p>
+                                <p>
+                                    <b>The Team</b> <span style="padding-left: 1.2em;"></span> Xiangyu Peng <br> <span style="padding-left: 5.4em;"></span> Alyssa Scheske 
+                                </p>
+                                <p>
+                                    <b>Generate unconditional realistic images from a single natural input image with akin quality to state-of-the art Generative Adversarial Networks (GANs) trained on complete classes of datasets.</b> During my last semester at University of Michigan, I worked with the team to replicate the original <a href="https://arxiv.org/pdf/1905.01164.pdf">SinGAN paper</a> as part of the final project for my <a href="https://web.eecs.umich.edu/~ahowens/eecs504/w20/">Coumputer Vision course</a>. SinGAN learns the internal patch distribution within the image and then creates good quality samples which carry the same visual content as the original image. The generated samples are very diverse yet maintain the global structure and fine textures of the image. Being unconditional, SinGAN can generate new samples from pure noise. SinGAN has a <b>training time of about 40-60 mins</b> as tested on <code>Google Collab</code> with GPU usage which is a huge plus considering that the trained model can be used perform a wide variety of image manipulation tasks.
+                                </p>
+                                <p>
+                                    One of the basic functionality of SinGAN is to <b>generate fake images that are hard to distinguish from the real one</b>. SinGAN can generate fakes of variable size and aspect ratio by just changing the size of the input noise map. When generating fakes, the model produces new structures while still maintaining the visual content of the original image. Interestingly, SinGAN is not only able to preserve reflections but in many cases even synthesize it
+                                </p>
+                                <p>
+                                    <b>Can you identify the real images from the fake ones?</b> Below is a gallery of a mix of samples generated from sinGAN. Guess whether an image is real or a fake and move your mouse cursor over the image to find whether you were right or wrong!
+                                </p>
+                            </div>
+                        </section >
+                    </div>
+                </div>
+                
+                <!-- Gallery -->
+                <div class="gallery style2 medium lightbox onscroll-fade-in">
+                    <article>
+                        <a href="images/gallery/fakes/colusseum.png" class="image">
+                            <img src="images/gallery/fakes/colusseum.png" alt="" />
+                        </a>
+                        <div class="caption">
+                            <h3>Fake</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="images/gallery/fakes/beach_1.png" class="image">
+                            <img src="images/gallery/fakes/beach_1.png" alt="" />
+                        </a>
+                        <div class="caption">
+                            <h3>Fake</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="images/gallery/reals/balloons.png" class="image">
+                            <img src="images/gallery/reals/balloons.png" alt="" />
+                        </a>
+                        <div class="caption">
+                            <h3>Real</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="images/gallery/fakes/balloons.png" class="image">
+                            <img src="images/gallery/fakes/balloons.png" alt="" />
+                        </a>
+                        <div class="caption">
+                            <h3>Fake</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="images/gallery/reals/starry_night.png" class="image">
+                            <img src="images/gallery/reals/starry_night.png" alt="" />
+                        </a>
+                        <div class="caption">
+                            <h3>Real</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="images/gallery/fakes/beach_2.png" class="image">
+                            <img src="images/gallery/fakes/beach_2.png" alt="" />
+                        </a>
+                        <div class="caption">
+                            <h3>Fake</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="images/gallery/reals/colusseum.png" class="image">
+                            <img src="images/gallery/reals/colusseum.png" alt="" />
+                        </a>
+                        <div class="caption">
+                            <h3>Real</h3>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <section class="wrapper style4 align-center">
+                <div class="inner">
+                    <div class="index align-left">   
+                        <section>
+                            <div class="content">
+                                <h2><u>Architecture</u></h2>
+                                <span class="image fit">
+                                    <img src="deep_learning/sinGAN/SinGAN_Architecture.png" alt="" />
+                                </span>
+                                <p>
+                                    SinGAN has a pyramid architecture with N levels; each level consisting of a <a href="https://arxiv.org/pdf/1406.2661.pdf"></a>GAN (a pair of G0 and D0). <b>I was responsible for creating this pyramid of GANs</b>. The number of levels (N) is calculated based on the image size to optimize for training resources. For the project, the maximal dimension of the input mage is set to 250px while maintaing the aspect ratio. During the training, the output from each level is used as the input to the next level. However, the initial input to the pyramid, to the coarsest level, is a random noise map. Each level of the pyramid evaluates patches from the input image in a coarse-to-fine fashion. 
+                                </p>
+                                
+                                <p>
+                                    The architecture for generators and discriminators for all levels remain the same. Both are fully convolutional and a patch of noise is added to the output from previous level and the result is passed through the generator.
+                                    At the coarsest level, the number of kernels is 32 and we double the number of kernels every 4 levels as in the original implementation. The receptive field is set at the coarsest layer and remains constant (11 × 11) for every layer. As we move up the pyramid, the image is upscaled but a fixed receptive field means a varying effective patch size as shown by the yellow block.
+                                </p>
+                                
+                            </div>
+                        </section >
+                    </div>
+                </div>
+                
+                
+                <!-- Applications -->
+                <div class="inner">    
+                    <div class="index align-left">    
+                        <section class="wrapper style4">
+                            <div class="content">
+                                <h2><u>Applications</u></h2>
+                                
+                                <p>Apart from random sample generation, SinGAN can be used to perform multiple image manipulative tasks like <code>paint-to-image</code>, <code>editing</code>, <code>harmonization</code>, <code>super-resolution</code> and <code>animation from a single image</code>. All such manipulation tasks can be performed by simply using the trained model without any further tuning. <b>However, the team implemented two maniupulation tasks: Editing and Harmonization</b></p>
+                                
+                                
+                                <h3>Editing</h3>
+                                <p>
+                                    <span class="image left"><img src="deep_learning/sinGAN/SinGAN_editing_2.png" alt="" /></span>  
+                                    
+                                    During the editing task, we copy certain patches of the original image and paste them in other locations in the same image. SinGAN can effectively regenerate fine texture and seamlessly stitch those pasted parts and create realistic images. 
+                                </p>
+                                
+                                <p>                  
+                                    Injecting image at different levels of the pyramid impacts how the final output looks like. The change in output is because the effective patch size of GAN in each scale layer is different. As the injection scale decreases, the outcome is more like the edited input. The lower the injection scale, the smaller the structures modified in the output. For injection scale 7, more global properties are changed but for injection scale 1, only local textures are changed but the global structure remains the same. Based on experiments, injection scale of 2, 3 and 4 (for level 4, 5 or 6 respectively) works best.
+                                </p>
+                                <span class="image fit"><img src="deep_learning/sinGAN/SinGAN_editing_1.png"  alt="" /></span>
+
+                                
+                                <h3>Harmonization</h3>
+                                <p>
+                                    Harmonization is a cool technique where style of images are explicitlye matched before blending them. Using a multi-level technique allows us to transfer the appearance of one image to another. To achieve this technique, SinGAN is first trained on a background image. Then an input image with newly added content to the original image is injected  and realistically blended with the style of the background. Similarly to editing, the injection scale impacts the final output. The best results are achieved at scales 3 or 4 because the newly added content maintains its structure while it is converted to the background’s style.
+                                </p>
+                                <span class="image fit"><img src="deep_learning/sinGAN/SinGAN_harmonization.png"  alt="" /></span>
+                                
+                            </div>
+                        </section>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Footer -->
+            <footer class="wrapper invert style1 align-center">
+                <div class="inner">
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="mailto:aggarwr@umich.edu" class="icon style2 fa-envelope"><span class="label">Mail</span></a></li>
+                    </ul>
+                    <p>&copy; Ruchir Aggarwal. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                </div>
+            </footer>
+            
+        </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
