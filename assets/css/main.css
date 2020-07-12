@@ -4275,11 +4275,13 @@ input, select, textarea {
 	}
 
 		.banner.style5 .content {
-			position: relative;
+			position: absolute;
 			width: 40rem;
 			max-width: 100%;
 			margin-bottom: 2rem;
 			z-index: 1;
+            top: 10%;
+			left: 43%;
 		}
 
 		.banner.style5 .image {
@@ -4297,7 +4299,7 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			border-radius: 0;
-			opacity: 0.5;
+			opacity: 1;
 		}
 
 			.banner.style5 .image img {
